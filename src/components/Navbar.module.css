@@ -1,0 +1,31 @@
+.navbarContainer {
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoItem {
+    color: #61DAFB;
+    display: inline-flex;
+    font-size: large;
+    vertical-align: middle;
+}
+
+.logoItem > h3 {
+    margin: 0;
+}
+
+.logoItem > img {
+    margin-right: 5px;
+}
+
+.projectItem {
+    color: #DEEBF8;
+    vertical-align: middle;
+}
