@@ -2,6 +2,7 @@
     background-color: #21222A;
     height: 90px;
     padding: 30px;
+    margin: 0;
 
     display: flex;
     flex-wrap: nowrap;
