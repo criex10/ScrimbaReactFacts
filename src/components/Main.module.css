@@ -3,7 +3,12 @@
     height: 100%;
     margin: 0;
     padding-left: 30px;
+    padding-right: 30px;
     display: inline-block;
+
+    background-image: url("./background-image.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .main > ul {
@@ -12,12 +17,15 @@
 
 .header {
     color: white;
+    letter-spacing: -0.05em;
 }
 
 .listItem {
-    color: #61DAFB;
+    color: white;
+    font-size: 1rem;
 }
 
-.listText {
-    color: white;
+.listItem::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
 }

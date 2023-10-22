@@ -3,7 +3,7 @@ import styles from "./Main.module.css";
 function Fact(props: { message: string }) {
     return (
         <li className={styles.listItem}>
-            <span className={styles.listText}>{props.message}</span>
+            {props.message}
         </li>
     );
 }
