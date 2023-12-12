@@ -75,6 +75,7 @@ nav.dark {
 nav.dark .toggler--slider {
     border-color: white;
     background-color: #F5F5F5;
+    justify-content: flex-end;
 }
 
 .toggler--slider--circle {
@@ -102,10 +103,6 @@ nav.dark .toggler--light {
 
 nav.dark .toggler-dark {
     color: #FFFFFF;
-}
-
-nav.dark .toggler--slider {
-    justify-content: flex-end;
 }
 
 /* MAIN styles */
