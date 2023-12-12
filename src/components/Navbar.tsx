@@ -1,15 +1,31 @@
+import {DisplayProps} from "@/components/displayTypes";
+import reactIconSmall from "@/images/react-icon-small.png"
 import Image from "next/image";
-import logo from "../images/logo.png";
-import styles from "./Navbar.module.css";
 
-export function Navbar() {
+export default function Navbar(props: DisplayProps) {
     return (
-        <div className={styles.navbarContainer}>
-            <div className={styles.logoItem}>
-                <Image src={logo} alt="React logo"/>
-                <h3>ReactFacts</h3>
+        <nav
+            className={props.darkMode ? "dark" : ""}
+        >
+            <Image
+                className="nav--logo_icon"
+                src={reactIconSmall}
+                alt={'Small React icon'}
+            />
+            <h3 className="nav--logo_text">ReactFacts</h3>
+
+            <div
+                className="toggler"
+            >
+                <p className="toggler--light">Light</p>
+                <div
+                    className="toggler--slider"
+                    onClick={props.toggleDarkMode}
+                >
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
             </div>
-            <h4 className={styles.projectItem}>React Course - Project 1</h4>
-        </div>
+        </nav>
     );
 }
