@@ -1,18 +1,20 @@
 "use client"
 
+import React from 'react';
 import Navbar from "@/components/Navbar";
 import {Main} from "@/components/Main";
 
-function toggleStub(firstArg: any) {
-    console.log(`Dark mode toggled ${typeof firstArg}`);
-}
-
 export default function Home() {
-    let darkMode = true;
+    let [darkMode, setDarkMode] = React.useState(true);
+
+    let toggleDarkMode = function() {
+        setDarkMode((prevMode: boolean) => !prevMode);
+    }
+
     return (
         <div>
-            <Navbar darkMode={darkMode} toggleDarkMode={toggleStub}/>
-            <Main darkMode={darkMode} toggleDarkMode={toggleStub}/>
+            <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+            <Main darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
         </div>
     );
 }
