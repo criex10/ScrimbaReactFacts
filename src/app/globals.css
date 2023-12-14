@@ -160,7 +160,7 @@ main.dark {
     background-image: url("../images/react-icon-dark.png");
     background-repeat: no-repeat;
     background-position: right center;
-    opacity: 0.5;
+    opacity: 0.15;
 }
 
 .main--facts > li {
